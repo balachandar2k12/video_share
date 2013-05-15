@@ -1,0 +1,10 @@
+<h1>Videos#create</h1>
+<%= form_for @user.videos, :html => { :multipart => true }, :remote => true do |f| %>
+  <div class="field">
+    <%= f.label :file %>
+    <%= f.file_field :file %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

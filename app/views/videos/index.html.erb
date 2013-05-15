@@ -1,2 +1,15 @@
 <h1>Videos#index</h1>
-<p>Find me in app/views/videos/index.html.erb</p>
+
+<%= form_for @user.videos.create, :html => { :multipart => true }, :remote => true do |f| %>
+  <div class="field">
+  	<%= f.label :title %>
+    <%= f.text_field :title %>
+  	<%= f.label :description %>
+    <%= f.text_area :description %>
+    <%= f.label :movie %>
+    <%= f.file_field :movie, :class=>"btn" %>
+  </div>
+  <div class="actions">
+    <%= f.submit :class=>"btn btn-primary" %>
+  </div>
+<% end %>

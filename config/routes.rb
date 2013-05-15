@@ -1,5 +1,11 @@
 VideoShare::Application.routes.draw do
 
+  # get "mobile/login"
+
+  # get "mobile/register"
+
+  # get "mobile/logout"
+
   # get "comments/index"
 
   # get "comments/create"
