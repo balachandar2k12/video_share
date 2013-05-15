@@ -15,7 +15,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
+  gem 'therubyracer', :platforms => :ruby
   # twitter bootstrap rails gem
 	gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
   gem 'uglifier', '>= 1.0.3'
@@ -27,6 +27,9 @@ gem 'jquery-rails'
 # devise gem
 gem 'devise', :git => "git://github.com/plataformatec/devise.git"
 
+#paperclip for file upload
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+gem 'remotipart', :git => 'git://github.com/JangoSteve/remotipart.git'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

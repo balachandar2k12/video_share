@@ -1,6 +1,27 @@
 VideoShare::Application.routes.draw do
-  devise_for :users
 
+  # get "comments/index"
+
+  # get "comments/create"
+
+  # get "comments/delete"
+
+  # get "comments/edit"
+
+  # get "comments/update"
+
+  # get "comments/new"
+
+  # get "videos/index"
+
+  #match "videos/create" => "videos#create",:via => [:get]
+
+  # get "videos/delete"
+
+  #get "home/index"
+
+  devise_for :users
+  resources :videos
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -50,7 +71,7 @@ VideoShare::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+   root :to => 'home#index'
 
   # See how all your routes lay out with "rake routes"
 
