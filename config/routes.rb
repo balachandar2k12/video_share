@@ -1,5 +1,10 @@
 VideoShare::Application.routes.draw do
 
+
+ devise_for :users
+
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+
   # get "mobile/login"
 
   # get "mobile/register"
@@ -26,7 +31,7 @@ VideoShare::Application.routes.draw do
 
   #get "home/index"
 
-  devise_for :users
+
   resources :videos
   # The priority is based upon order of creation:
   # first created -> highest priority.

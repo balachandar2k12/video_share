@@ -30,6 +30,7 @@ gem 'devise', :git => "git://github.com/plataformatec/devise.git"
 #paperclip for file upload
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem 'remotipart', :git => 'git://github.com/JangoSteve/remotipart.git'
+gem 'rails_admin'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

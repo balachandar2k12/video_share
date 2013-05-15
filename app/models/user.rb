@@ -9,6 +9,6 @@ class User < ActiveRecord::Base
   has_many :videos
   has_many :likes
   has_many :comments
-  has_many :invitions
+  has_many :invitations
 
 end
